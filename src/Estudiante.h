@@ -11,7 +11,7 @@
 
 class Estudiante {
 private:
-    std::vector<Tarea> tareas;
+    std::vector<Tarea*> tareas;
     std::string nombre;
     int codigoID;
     int semestre;
