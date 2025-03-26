@@ -1,0 +1,3 @@
+C:/Users/Asus/Desktop/POO/Repositorios_GIT/8-practica-contenedores-default_biomed/cmake-build-debug/CMakeFiles/8_practica_contenedores_default_biomed.dir
+C:/Users/Asus/Desktop/POO/Repositorios_GIT/8-practica-contenedores-default_biomed/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Asus/Desktop/POO/Repositorios_GIT/8-practica-contenedores-default_biomed/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -48,5 +48,53 @@ Cada estudiante registra tareas diarias que pueden incluir actividades académic
 
 Haga el diseño orientadoa objetos para este enunciado, actualice el readme con el diseño y luego haga la codificación. 
 
+###DIAGRAMA DEL PROBLEMA EN MERMAID
 
+```mermaid
+classDiagram
+
+    class Tarea{
+        - string descripcion
+        - string tipo
+        - int duracion
+        - bool indicadorRealizado
+        + void mostrarInfoTarea()
+        + void setIndicador(bool indicadorNuevo)
+        + bool getIndicador()
+        + int getDuracion()
+        + string getDescripcion()
+      
+    }
+    class Estudiante{
+        - vector <Tarea> tareas
+        - string nombre
+        - int codigo
+        - int semestre
+        - int edad
+        - string carrera
+        + void mostrarInfoEstudiante()
+        + int getCodigo()
+        + void RegistrarTarea()
+        + void EliminarTarea()
+        + void ContarTareas()
+        + int getTiempoTareas()
+    }
+    
+    class Gestor{
+        - map <int,Estudiante> estudiantes
+        - inicializarDatos()
+        +void registrarEstudiante()
+        +void eliminarEstudiante()
+        +void registrarNuevaTarea(int codigoEstudiante)
+        +void eliminarTareaRealizada(int codigoEstudiante)
+        +void mostrartareasEstudiante()
+        +void mostrarEstudiantes()
+        +void ActualizarInfoEstudiantes()
+ 
+       }
+
+
+    Gestor o-- Estudiante
+    Estudiante o--Tarea
+```
 
